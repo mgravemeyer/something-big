@@ -1,4 +1,5 @@
-import {ReactComponentElement, useState} from 'react'
+import {ReactComponentElement, useState} from 'react';
+import '../../style/registerPage.sass';
 
 export interface RegisterPageProps {
     setRegister:  React.Dispatch<React.SetStateAction<boolean>>
