@@ -1,6 +1,10 @@
+import '../../style/loginPage.sass';
+
 function LoginPage() {
     return(
-        <p> Login Page </p>
+        <div className="LoginForm">
+            <p> Login Page</p>
+        </div>
     )
 }
 
