@@ -1,2 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap')
+
+h1, h2, h3, a, p
+  font-family: 'Lato', sans-serif
+h1
+  font-weight: 900
+  display: block
+h1 span
+  color: blue
+a
+  cursor: pointer
+  font-size: 15px !important
+a:hover
+  text-decoration: underline
 .LoginForm
-  background-color: red
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 80vh
+.LoginForm h1
+  margin-top: -15px !important
+.LoginForm form a
+  font-weight: 700
+  font-size: 12px
+.LoginForm form
+  flex-direction: row
+.LoginForm form input
+  display: flex
+  height: 40px
+  border-radius: 5px
+.LoginForm form input, .LoginForm a, .LoginForm p, .LoginForm h1
+  margin-bottom: 15px
+  margin-top: 15px
+.LoginForm form input[type=text], .LoginForm form input[type=password]
+  text-indent: 10px
+  border: 2px solid #E6EAED
+  width: 350px
+.LoginForm form input[type=submit]
+  cursor: pointer
+  margin-top: 25px
+  font-weight: 700
+  background-color: blue
+  color: white
+  border: none
+  width: 100px
+  text-align: center
+  justify-content: center
+#registerButton
+  color: blue
+  font-weight: 700

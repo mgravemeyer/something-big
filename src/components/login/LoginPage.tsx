@@ -30,9 +30,14 @@ const LoginPage: React.FC<LoginPageProps> = ( {setLogin}: LoginPageProps ) => {
     return(
         <div className="LoginForm" onSubmit={onSubmit}>
             <form>
-                <input type='text' placeholder='Username' value={username} onChange={(e) => setUsername(e.target.value)}/>
-                <input type='text' placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)}/>
-                <input type='submit' value="Login"/>
+                <h1> Welcome back </h1>
+                <h1> to <span> Awesome App</span>, {username} </h1>
+                <p> Sign in into your account below </p>
+                <input className="inputText" type='text' placeholder='Username' value={username} onChange={(e) => setUsername(e.target.value)}/>
+                <input type='password' placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)}/>
+                <a> Forgot password? </a>
+                <input type='submit' value="Sign in"/>
+                <p> Don't have an account? <a id="registerButton"> Register </a> </p>
             </form>
         </div>
     )
