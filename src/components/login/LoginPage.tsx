@@ -3,9 +3,10 @@ import '../../style/loginPage.sass';
 
 export interface LoginPageProps {
     setLogin:  React.Dispatch<React.SetStateAction<boolean>>
+    setRegister: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const LoginPage: React.FC<LoginPageProps> = ( {setLogin}: LoginPageProps ) => {
+const LoginPage: React.FC<LoginPageProps> = ( {setLogin, setRegister}: LoginPageProps ) => {
 
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -37,7 +38,7 @@ const LoginPage: React.FC<LoginPageProps> = ( {setLogin}: LoginPageProps ) => {
                 <input type='password' placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)}/>
                 <a> Forgot password? </a>
                 <input type='submit' value="Sign in"/>
-                <p> Don't have an account? <a id="registerButton"> Register </a> </p>
+                <p> Don't have an account? <a onClick={() => setRegister(true)} id="registerButton"> Register </a> </p>
             </form>
         </div>
     )
