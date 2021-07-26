@@ -1,11 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import LoginPage from './components/login/LoginPage';
 
-function App() {
+const App = () => {
+  const [login, setLogin] = useState(false);
   return (
     <div className="App">
-        <LoginPage/>
+        { !login && <LoginPage setLogin={setLogin}/> }
     </div>
   );
 }
