@@ -1,8 +1,9 @@
-import {ReactComponentElement, useState} from 'react'
+import {ReactComponentElement, useState} from 'react';
 import '../style/loginPage.sass';
 import Textfield from "../components/Textfield";
 import SubmitButton from "../components/SubmitButton";
 import Feature from "../media/feature.png";
+import Logo from "../media/logo.png";
 
 export interface LoginPageProps {
     setLogin:  React.Dispatch<React.SetStateAction<boolean>>
@@ -37,20 +38,28 @@ const LoginPage: React.FC<LoginPageProps> = ( {setLogin, setRegister}: LoginPage
                 <form>
                     <div className="LeftPanel panel">
                         <div className="LeftPanelContent">
-                            <h1> Welcome back </h1>
-                            <h1> to <span> Awesome App</span>, {username} </h1>
-                            <p> Sign in into your account below </p>
+                            <img src={Logo}/>
+                            <div className="HeadlineContainer">
+                                <h1> Welcome back <br/>  to <span> Freelance Station</span> </h1>
+                            </div>
+                            <p id="info-text"> Sign in into your account below </p>
                             <Textfield text={username} setText={setUsername} label="Username" hidden={false}/>
                             <Textfield text={password} setText={setPassword} label="Password" hidden={true}/>
-                            <a> Forgot password? </a>
+                            <a> Forgot password? </a> <br/>
                             <SubmitButton label="Sign In"/>
-                            <p> Don't have an account? <a onClick={() => setRegister(true)} id="registerButton"> Register </a> </p>
+                            <p id="register-text"> Don't have an account? <a onClick={() => setRegister(true)} id="registerButton"> <span id="higlighted">Register</span></a> </p>
                         </div>
                     </div>
                 </form>
             </div>
             <div className="RightPanel panel">
                 <div className="RightPanelContent">
+                    <p id="feature-ad">NEW FEATURE</p>
+                    <p id="headline-ad">Campaign Dashboard with <span id="blue">Gantt View</span></p>
+                    <div id="text-ad-wrapper">
+                        <p id="text-add">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum</p>
+                        <a id="learn-more-ad">Learn more</a>
+                    </div>
                     <img src={Feature}/>
                 </div>
             </div>
