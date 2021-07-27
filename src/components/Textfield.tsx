@@ -1,4 +1,5 @@
 import {ReactComponentElement, useState} from 'react';
+import '../style/textfield'
 
 export interface TextfieldProps {
     text:  string

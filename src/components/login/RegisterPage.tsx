@@ -1,5 +1,5 @@
 import {ReactComponentElement, useState} from 'react';
-import '../../style/registerPage.sass';
+// import '../../style/registerPage.sass';
 import People from '../../media/people.jpg';
 
 export interface RegisterPageProps {
@@ -20,6 +20,7 @@ const RegisterPage: React.FC<RegisterPageProps> = ( {setRegister}: RegisterPageP
                 <h1> Create your </h1>
                 <h1> account </h1>
                 <form>
+
                     <div className="input-field">
                     <input id="name" type="text" required/>
                     <label htmlFor="name">Your name:</label>
