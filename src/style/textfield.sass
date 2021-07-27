@@ -1,8 +1,37 @@
-.LoginForm form input
-  height: 40px
-  border-radius: 5px
-  margin-bottom: 15px
-  margin-top: 15px
-  text-indent: 10px
-  border: 2px solid #E6EAED
+.input-field
+  position: relative
   width: 350px
+  height: 40px
+  line-height: 44px
+.input-field label
+  position: absolute
+  top: 0
+  left: 14px
+  width: 100%
+  color: #d3d3d3
+  transition: 0.2s all
+  margin-top: 3px
+  cursor: text
+.input-field input
+  padding-top: 10px
+  width: 100%
+  border: 0
+  height: 30px
+  border-radius: 5px
+  outline: 0
+  border: 2px solid #E6EAED
+  text-indent: 10px
+  box-shadow: none
+  color: #111
+.input-field input:invalid
+  outline: 0
+// color: #ff2300;
+//   border-color: #ff2300;
+
+.input-field input:focus
+  border-color: #D2D6D9
+
+.input-field input:focus~label,
+.input-field input:valid~label
+  font-size: 10px
+  top: -14px

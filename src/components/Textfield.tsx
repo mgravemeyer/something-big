@@ -1,5 +1,5 @@
 import {ReactComponentElement, useState} from 'react';
-import '../style/textfield'
+import '../style/textfield.sass'
 
 export interface TextfieldProps {
     text:  string
@@ -10,8 +10,8 @@ export interface TextfieldProps {
 const Textfield = ( {text, setText, label}: TextfieldProps ) => {
     return (
         <div className="input-field">
-            <input id="textfield" type="text" value={text} onChange={(e) => setText(e.target.value)}/>
-            <label htmlFor="textfield"> {label} </label>
+            <input id="textfield-input" type="text" value={text} onChange={(e) => setText(e.target.value)} required />
+            <label htmlFor="textfield-input"> {label} </label>
         </div>
     )
 }
