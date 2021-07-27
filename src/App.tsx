@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
-import './App.css';
-import LoginPage from './components/login/LoginPage';
-import RegisterPage from "./components/login/RegisterPage";
+import LoginPage from './pages/LoginPage';
+import RegisterPage from "./pages/RegisterPage";
 import './style/global.sass';
 
 const App = () => {

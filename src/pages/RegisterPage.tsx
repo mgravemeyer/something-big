@@ -1,8 +1,8 @@
 import {ReactComponentElement, useState} from 'react';
- import '../../style/registerPage.sass';
-import People from '../../media/people.jpg';
-import Textfield from "../Textfield";
-import SubmitButton from "../SubmitButton";
+ import '../style/registerPage.sass';
+import People from '../media/people.jpg';
+import Textfield from "../components/Textfield";
+import SubmitButton from "../components/SubmitButton";
 
 export interface RegisterPageProps {
     setRegister:  React.Dispatch<React.SetStateAction<boolean>>
