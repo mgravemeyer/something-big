@@ -2,6 +2,7 @@ import {ReactComponentElement, useState} from 'react';
  import '../../style/registerPage.sass';
 import People from '../../media/people.jpg';
 import Textfield from "../Textfield";
+import SubmitButton from "../SubmitButton";
 
 export interface RegisterPageProps {
     setRegister:  React.Dispatch<React.SetStateAction<boolean>>
@@ -28,14 +29,9 @@ const RegisterPage: React.FC<RegisterPageProps> = ( {setRegister}: RegisterPageP
                     <Textfield text={username} setText={setUsername} label="Username" hidden={false}/>
                     <Textfield text={email} setText={setEmail} label="E-Mail" hidden={false}/>
                     <Textfield text={password} setText={setPassword} label="Password" hidden={true}/>
-                    {/*<input id="name" type="text" required/>*/}
-                    {/*<label htmlFor="name">Your name:</label>*/}
-                    {/*<input type="text" placeholder="E-Mail"/>*/}
-                    {/*<input type="text" placeholder="Password"/>*/}
-                    {/*<p>By clicking "Register" you agree to out Terms and Privacy Policy</p>*/}
-                    {/*<input type='submit' value="Register"/>*/}
-                    {/*<p>Already have an account? <a onClick={() => setRegister(false)}>Sign In</a></p>*/}
-                    {/*</div>*/}
+                    <p>By clicking "Register" you agree to out Terms and Privacy Policy</p>
+                    <SubmitButton label="Register"/>
+                    <p>Already have an account? <a onClick={() => setRegister(false)}>Sign In</a></p>
                 </form>
             </div>
             <div className="RightPanel">
