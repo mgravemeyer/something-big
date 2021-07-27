@@ -9,9 +9,9 @@ const App = () => {
   const [register, setRegister] = useState(false);
   return (
     <div className="App">
-      {/*{ !login && !register && <LoginPage setLogin={setLogin} setRegister={setRegister}/> }*/}
+      { !login && !register && <LoginPage setLogin={setLogin} setRegister={setRegister}/> }
       {/*{ login && !register && <LoginPage setLogin={setLogin}/> }*/}
-      { !login && !register && <RegisterPage setRegister={setRegister}/> }
+      { !login && register && <RegisterPage setRegister={setRegister}/> }
     </div>
   );
 }
