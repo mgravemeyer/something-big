@@ -1,5 +1,4 @@
-import {ReactComponentElement, useState} from 'react';
-import '../style/button.sass'
+import '../style/button.sass';
 
 export interface SubmitButtonProps {
     label: string

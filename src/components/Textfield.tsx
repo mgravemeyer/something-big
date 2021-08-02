@@ -1,5 +1,4 @@
-import {ReactComponentElement, useState} from 'react';
-import '../style/textfield.sass'
+import '../style/textfield.sass';
 
 export interface TextfieldProps {
     text:  string

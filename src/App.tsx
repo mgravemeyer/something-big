@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from "./pages/RegisterPage";
 import './style/global.sass';

@@ -1,9 +1,9 @@
-import {ReactComponentElement, useState} from 'react';
-import '../style/loginPage.sass';
-import Textfield from "../components/Textfield";
+import { useState } from 'react';
 import SubmitButton from "../components/SubmitButton";
+import Textfield from "../components/Textfield";
 import Feature from "../media/feature.png";
 import Logo from "../media/logo.png";
+import '../style/loginPage.sass';
 
 export interface LoginPageProps {
     setLogin:  React.Dispatch<React.SetStateAction<boolean>>
