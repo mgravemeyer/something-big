@@ -12,7 +12,7 @@ const RegisterPage: React.FC<RegisterPageProps> = ( {setRegister}: RegisterPageP
 
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
+    const [password, setPassword] = useState(""); 
 
     const onSubmit = (e: any) => {
         e.preventDefault()
